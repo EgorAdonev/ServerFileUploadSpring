@@ -34,6 +34,7 @@ public class FileSystemStorageService implements StorageService {
 			if (file.isEmpty()){
 //					|| file.getInputStream().equals(InputStream.nullInputStream())) {
 				throw new StorageException("empty file " + file.getOriginalFilename());
+
 			}
 			Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
 		} catch (IOException e) {
