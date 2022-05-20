@@ -8,14 +8,14 @@
 		<version>2.6.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>uploading-files-initial</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>uploading-files-initial</name>
+	<groupId>com.adonev.http</groupId>
+	<artifactId>fileuploadspring_test</artifactId>
+	<version>0.0.1</version>
+	<name>fileuploadspring_test</name>
 	<description>file uploading</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
