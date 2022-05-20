@@ -1,7 +1,0 @@
-com\adonev\http\uploadingfiles\storage\StorageService.class
-com\adonev\http\uploadingfiles\controller\FileUploadController.class
-com\adonev\http\uploadingfiles\storage\StorageException.class
-com\adonev\http\uploadingfiles\storage\StorageProperties.class
-com\adonev\http\uploadingfiles\UploadingFilesApplication.class
-com\adonev\http\uploadingfiles\storage\StorageFileNotFoundException.class
-com\adonev\http\uploadingfiles\storage\FileSystemStorageService.class
