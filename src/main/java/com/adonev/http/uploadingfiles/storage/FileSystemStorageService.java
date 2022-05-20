@@ -11,6 +11,7 @@ import org.springframework.util.FileSystemUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -30,8 +31,9 @@ public class FileSystemStorageService implements StorageService {
 	@Override
 	public void store(MultipartFile file) {
 		try {
-			if (file.isEmpty()) {
-				LOG.error("empty file " + file.getOriginalFilename());
+			if (file.isEmpty()){
+//					|| file.getInputStream().equals(InputStream.nullInputStream())) {
+				throw new StorageException("empty file " + file.getOriginalFilename());
 			}
 			Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
 		} catch (IOException e) {
